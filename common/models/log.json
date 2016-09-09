@@ -1,0 +1,48 @@
+{
+  "name": "log",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "filename": {
+      "type": "string"
+    },
+    "serialNo": {
+      "type": "string"
+    },
+    "firmware": {
+      "type": "string"
+    },
+    "parentID": {
+      "type": "string"
+    },
+    "isSuccessful": {
+      "type": "boolean"
+    },
+    "createdAt": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "cycle": {
+      "type": "belongsTo",
+      "model": "cycle",
+      "foreignKey": ""
+    },
+    "testcase": {
+      "type": "belongsTo",
+      "model": "testcase",
+      "foreignKey": ""
+    },
+    "test": {
+      "type": "belongsTo",
+      "model": "test",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

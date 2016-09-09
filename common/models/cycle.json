@@ -1,0 +1,34 @@
+{
+  "name": "cycle",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "cycle": {
+      "type": "number"
+    },
+    "parentID": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "testcase": {
+      "type": "belongsTo",
+      "model": "testcase",
+      "foreignKey": ""
+    },
+    "logs": {
+      "type": "hasMany",
+      "model": "log",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

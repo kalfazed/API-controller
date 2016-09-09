@@ -1,0 +1,34 @@
+{
+  "name": "test",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "testcases": {
+      "type": "hasMany",
+      "model": "testcase",
+      "foreignKey": ""
+    },
+    "logs": {
+      "type": "hasMany",
+      "model": "log",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,46 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "testDS": {
+    "host": "192.168.130.90",
+    "port": 27017,
+    "url": "",
+    "database": "admin",
+    "password": "admin123",
+    "name": "testDS",
+    "user": "admin",
+    "connector": "mongodb"
+  },
+  "testcaseDS": {
+    "host": "192.168.130.90",
+    "port": 27017,
+    "url": "",
+    "database": "admin",
+    "password": "admin123",
+    "name": "testcaseDS",
+    "user": "admin",
+    "connector": "mongodb"
+  },
+  "cycleDS": {
+    "host": "192.168.130.90",
+    "port": 27017,
+    "url": "",
+    "database": "admin",
+    "password": "admin123",
+    "name": "cycleDS",
+    "user": "admin",
+    "connector": "mongodb"
+  },
+  "logDS": {
+    "host": "192.168.130.90",
+    "port": 27017,
+    "url": "",
+    "database": "admin",
+    "password": "admin123",
+    "name": "logDS",
+    "user": "admin",
+    "connector": "mongodb"
+  }
+}

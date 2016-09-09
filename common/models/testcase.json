@@ -1,0 +1,48 @@
+{
+  "name": "testcase",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "host": {
+      "type": "string"
+    },
+    "tester": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "parentID": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "test": {
+      "type": "belongsTo",
+      "model": "test",
+      "foreignKey": ""
+    },
+    "cycles": {
+      "type": "hasMany",
+      "model": "cycle",
+      "foreignKey": ""
+    },
+    "logs": {
+      "type": "hasMany",
+      "model": "log",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
